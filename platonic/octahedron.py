@@ -1,0 +1,26 @@
+import numpy as np
+import trimesh
+
+class Octahedron:
+
+  def __init__(self, radius=1):
+    self.radius = radius
+
+  def vertices(self):
+    invsqrt2 = 1.0 / np.sqrt(2.0)
+    unscaled = np.array([
+      [      0.0,       0.0,  1.0],
+      [      0.0,       0.0, -1.0],
+      [ invsqrt2,  invsqrt2,  0.0],
+      [ invsqrt2, -invsqrt2,  0.0],
+      [-invsqrt2,  invsqrt2,  0.0],
+      [-invsqrt2, -invsqrt2,  0.0]
+    ])
+    return self.radius * unscaled
+
+  def mesh(self):
+    return trimesh.convex.convex_hull(self.vertices())
+
+  def to_stl(self):
+    self.mesh().export("stl/octahedron.stl")
+    
