@@ -22,5 +22,5 @@ class Octahedron:
     return trimesh.convex.convex_hull(self.vertices())
 
   def to_stl(self):
-    self.mesh().export("stl/octahedron.stl")
+    self.mesh().export("../stl/octahedron.stl")
     
