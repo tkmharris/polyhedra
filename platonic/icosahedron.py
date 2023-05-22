@@ -24,6 +24,11 @@ class Icosahedron:
     ])
     return self.radius * (1.0 / np.sqrt(1.0 + φ**2)) * unscaled
 
+  def faces(self):
+    indices = [
+      []
+    ]
+
   def mesh(self):
     return trimesh.convex.convex_hull(self.vertices())
 
