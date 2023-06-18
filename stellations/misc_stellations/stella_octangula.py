@@ -36,5 +36,5 @@ class StellaOctangula:
       ])
 
   def to_stl(self):
-    self.mesh().export("../stl/stella_octangula.stl")
+    self.mesh().export("stl/stella_octangula.stl")
     

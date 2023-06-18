@@ -67,5 +67,5 @@ class SmallTriambicIcosahedron:
     return mesh
       
   def to_stl(self):
-    self.mesh().export("../stl/small_triambic_icosahedron.stl")
+    self.mesh().export("stl/small_triambic_icosahedron.stl")
     

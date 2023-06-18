@@ -40,5 +40,5 @@ class Permutahedron:
     return trimesh.convex.convex_hull(self.vertices())
 
   def to_stl(self):
-    self.mesh().export("../stl/permutahedron.stl")
+    self.mesh().export("stl/permutahedron.stl")
     
