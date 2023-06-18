@@ -19,5 +19,5 @@ class Tetrahedron:
     return trimesh.convex.convex_hull(self.vertices())
 
   def to_stl(self):
-    self.mesh().export("../stl/tetrahedron.stl")
+    self.mesh().export("stl/tetrahedron.stl")
     

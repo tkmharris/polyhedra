@@ -33,5 +33,5 @@ class Icosahedron:
     return trimesh.convex.convex_hull(self.vertices())
 
   def to_stl(self):
-    self.mesh().export("../stl/icosahedron.stl")
+    self.mesh().export("stl/icosahedron.stl")
     

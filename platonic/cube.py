@@ -23,4 +23,4 @@ class Cube:
     return trimesh.convex.convex_hull(self.vertices())
 
   def to_stl(self):
-    self.mesh().export("../stl/cube.stl")
+    self.mesh().export("stl/cube.stl")
